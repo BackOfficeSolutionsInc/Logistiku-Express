@@ -1,0 +1,157 @@
+html, body {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+body { height:100%; width:100%; margin:0; padding:0; }
+
+/*------> Navigation <------*/
+
+.container { margin: 0 auto !important; max-width: 1280px !important; width: 85% !important; }
+.brand-logo img { vertical-align: middle; height: 40px; }
+nav .row { margin-bottom:0; }
+.nav-wrapper { background-color: rgba(207, 207, 207, 0.6) !important; font-weight: bold; height: 70px; }
+.nav-wrapper a { color: #06717e !important; font-size: 17px !important; font-weight: 400; }
+
+/*------> Side Navigation <------*/
+
+.sidenav { width: 360px !important; height: auto !important; }
+.sidenav img { height: 40px; margin-top: 10px; display: block; margin-left: auto; margin-right: auto; }
+.socmed-side { background-color: rgba(207, 207, 207, 0.9); width: 100%; height: auto; margin-top: -15px; margin-bottom: 20px; }
+.socmed-side p { color: #06717e; font-family: 'Montserrat', sans-serif; font-weight: 500; text-align: center; }
+.socmed-icons { margin-left: 90px; margin-right: 0px; }
+#fb-side img { width: 43px; height: auto; margin-left: 70px; }
+#pinterest-side img { width: 43px; height: auto; margin-left: 10px; }
+
+/*------> Search <------*/
+h3 { display: none; }
+.search { margin-left: 5px; background: white; width: 275px;  }
+.track { width: 190px; padding: 10px; font-size: 20px; border: none; outline: none; }
+.button1 { color: white; width: 65px; padding: 10px; font-size: 20px; border: none; background: #06717e; border-radius: 3px; }
+.search, .submit:hover { padding: 3px; border-radius: 3px; text-align: center; }
+
+.track-trace { display: none; }
+.button { display: none; }
+
+/*------> Header Section <------*/
+
+.parallax-container { width: 100% !important; height: 590px !important; }
+.parallax img { display: block; }
+.mobile-bg img { display: none; }
+
+h5 p { color: white; font-size: 2rem !important; font-style: italic; position: relative; 
+  font-weight: 900 !important; margin-top: 400px !important; margin-right: 60px !important; text-shadow: 0px 1px 11px #000000; }
+h2 .btn, .btn-large { font-family: 'Source Sans Pro'; font-weight: 700; font-size: 2rem !important; margin-right: 55px;  
+  background-color: #f07025 !important; border-radius: 5px !important; width: 310px; }
+
+
+/*---> Left Content <---*/
+
+.baes { float: left; width: 40%; }
+.baes img{ height: 620px; margin-top: auto; display: block; padding-left: 10px; padding-right: 10px; margin-right: auto; }
+
+/*---> Right Content <---*/
+
+.title { float: right; width: 60%; }
+.title h1{ font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 63px; text-align: right; margin-right: 5px; }
+#blue { color: #06717e; }
+#orange { color: #f07025; margin-left: -20px; }
+#blue2 { color: #06717e; margin-left: -20px; }
+h6 p { color: #06717e; font-family: 'Montserrat', sans-serif; font-size: 55px; font-weight: bold; text-align: center; margin-top: -40px; }
+#text p { color: #06717e; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold; text-align: center; 
+  margin-left: 10px !important; margin-top: -15px; }
+.video { width: auto !important; height: 342px; background-color: #f1f1f1; margin-left: 30px; margin-top: 20px; }
+.video p { color: #06717e; font-size: 13px; font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 600; text-align: center; 
+  padding-top: 352px; }
+
+  /*------> Footer <------*/
+
+body { display: flex; min-height: 100vh; flex-direction: column; }
+
+ main { flex: 1 0 auto; }
+.page-footer, .container { padding-bottom: 30px; }
+.page-footer { background-color: rgba(207, 207, 207, 0.9) !important; font-size: 12px; font-family: 'Montserrat', sans-serif; font-weight: 700; }
+.page-footer a { float: left; color: #06717e; text-align: center; padding: 14px; margin-top: -20px; }
+a:hover { color: #034a53; }
+.apps p { font-family: 'Source Sans Pro', sans-serif; font-size: 13px !important; font-weight: 600 !important; color: #06717e;
+  text-align: left; margin-left: 10px !important; padding-top: 70px; margin-bottom: 10px; }
+#google img { width: 130px; height: auto; float: left; margin-top: -20px; margin-left: 10px; }
+#apple img { width: 130px; height: auto; float: left; margin-top: -20px; margin-left: 10px; }
+
+  /*------> Right Footer <------*/
+  
+  .right-footer { float: right; width: 650px; height: 162; margin-top: -140px; }
+  .book-btn { background-color: #f07025; width: 210px; height: auto; border-radius: 5px; margin-left: 175px; }
+  .right-footer a { color: white !important; font-family: 'Montserrat', sans-serif; font-size: 25px; font-weight: 700; padding-bottom: 10px !important; }
+  
+  /*------> SocMed<------*/
+  
+  .socmed { color: #06717e; margin-top: 60px; margin-left: 170px; }
+  #fb img { width: 43px; height: auto; margin-left: 60px; }
+  #pinterest img { width: 43px; height: auto; margin-left: 10px; }
+
+/*------> Mobile Layout<------*/
+
+@media only screen and (max-width:500px) {
+
+/*------> Header Section <------*/
+
+.parallax img { display: none; }
+#mobile-bg { width: 100%; height: 100vh; position: absolute; top: 0; left: 0; z-index: -1; background: url(../images/header/mobile/mobile-front_header.jpg) 
+  center center no-repeat; background-size: cover; }
+
+h3 { display: block; position: relative; margin-top: 100px; color: #06717e; font-size: 30px !important; font-family: 'Source Sans Pro'; 
+  font-weight: 800 !important; text-align: center; text-shadow: 0px 1px 5px white; }
+  .search1 { display: block; margin-left: 13px; background: white; width: 275px;  }
+  .track-trace { display: block; width: 190px; padding: 14px; font-size: 20px; border: none; outline: none; }
+  .button { display: block; background-color: #06717e; border-radius: 3px; border: none; color: white; padding: 15px 10px; text-align: center; text-decoration: none;
+    font-size: 16px; position: relative; margin-left: 198px !important; width: 65px; float:right; margin-top: -50px; }
+  .search1, .submit2:hover { padding: 3px; border-radius: 3px; text-align: center; }
+  
+
+h5 p { color: white; font-size: 2rem !important;  text-align: center !important; width: 290px !important; font-style: italic; font-weight: 900 !important; margin-left: 10px !important;
+   position: relative; margin-top: 320px !important; text-shadow: 0px 1px 5px black; }
+h2 .btn,  .btn-large { margin-top: -20px !important; width: 290px; margin-right: 10px !important; text-align: center; }
+
+.title { width: 100%; height: auto; position: relative; margin-top: -530px; }
+.title h1 p { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 30px !important; text-align: center; }
+#blue { color: #06717e; }
+#orange { color: #f07025; margin-left: -9px; }
+#blue2 { color: #06717e; margin-left: -9px; }
+h6 p { color: #06717e; font-family: 'Montserrat', sans-serif; font-size: 20px !important; font-weight: bold; text-align: center; margin-top: -40px; }
+#text p { color: #06717e; font-family: 'Montserrat', sans-serif; font-size: 12px !important; font-weight: bold; text-align: center; margin-top: -15px; }
+
+
+.baes { width: 100% !important; height: auto; position: relative; margin-top: 160px !important; }
+.baes img { height: 320px; margin-right: 20px; }
+
+.video { width: 100%; height: 220px; background-color: #f1f1f1; margin-top: 350px; position: relative; margin-left: 0px; }
+.video p { color: #06717e; font-size: 13px !important; font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 600; text-align: center; 
+  padding-top: 230px !important; padding: 15px; }
+
+
+ /*------> Footer <------*/
+
+ body { display: flex; min-height: 100vh; flex-direction: column; }
+
+ main { flex: 1 0 auto; }
+ .page-footer, .container { padding-bottom: 20px; }
+ .page-footer { background-color: rgba(207, 207, 207, 0.9) !important; font-size: 12px; font-family: 'Montserrat', sans-serif; font-weight: 700; margin-top: 40px; }
+ .page-footer a { display: none; }
+ .apps { display: block; margin-left: auto; margin-right: auto; }
+ .apps p { font-family: 'Source Sans Pro', sans-serif; font-size: 13px !important; font-weight: 600 !important; color: #06717e;
+  text-align: center; padding-top: 0px; margin-bottom: 10px; }
+ #google img { width: 130px; height: auto; margin-top: -20px; margin-left: 20px; }
+ #apple img { width: 130px; height: auto; margin-top: -20px; margin-left: 10px; }
+ 
+   /*------> Right Footer <------*/
+ 
+ .right-footer { display: none; }
+ .book-btn { display: none; }
+ .right-footer a { display: none; }
+ 
+ /*------> SocMed<------*/
+ 
+ .socmed { display: none; }
+ #fb img { display: none; }
+ #pinterest img { display: none; }
+
+  }

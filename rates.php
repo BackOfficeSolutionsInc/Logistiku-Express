@@ -24,12 +24,12 @@
             <a href="#" data-target="menu-responsive" class="sidenav-trigger">
                 <i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="services.php">Services</a></li>
-                <li><a href="rates.php">Rates</a></li>
-                <li><a href="location.php">Locations</a></li>
-                <li><a href="support.php">Customer Support</a></li>
-                <li><a href="riders.php">Riders</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="rates.html">Rates</a></li>
+                <li><a href="location.html">Locations</a></li>
+                <li><a href="support.html">Customer Support</a></li>
+                <li><a href="riders.html">Riders</a></li>
                 <li>
                     <div class="center row">
                         <div class="col s12">
@@ -52,15 +52,15 @@
             <hr>
             <div class="center row">
             </div>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="services.php">Services</a></li>
-            <li><a href="rates.php">Rates</a></li>
-            <li><a href="location.php">Locations</a></li>
-            <li><a href="support.php">Customer Support</a></li>
-            <li><a href="riders.php">Riders</a></li>
-            <li><a href="about.php">About Us</a></li>
-            <li><a href="careers.php">Careers</a></li>
-            <li><a href="contactus.php">Contact us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="rates.html">Rates</a></li>
+            <li><a href="location.html">Locations</a></li>
+            <li><a href="support.html">Customer Support</a></li>
+            <li><a href="riders.html">Riders</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
             <hr>
             <div class="socmed-side">
                 <p>Email us: customer@logistikus.com</p>
@@ -93,7 +93,7 @@
                 <div class="col s12">
                     <div class="row">
                         <div class="col s2">
-                            <select id="ddl" onchange="configureDropDownLists(this,document.getElementById('ddl2'))">
+                            <select class="browser-default" id="ddl" onchange="configureDropDownLists(this,document.getElementById('ddl2'))">
                                 <option value="origin">Select Origin</option>
                                 <option value="origin">Manila</option>
                                 <option value="origin">Imus Cavite</option>
@@ -111,27 +111,27 @@
 
                         </div>
                         <div class="col s2">
-                            <select id="ddl2">
+                            <select id="ddl2" class="browser-default">
                                 <option value="origin">Select Destination</option>
                             </select>
                         </div>
-                        <div class="col s2">
-                            <select id="ddl3">
+                        <div class="col s2" class="browser-default">
+                            <select id="ddl3" class="browser-default">
                                 <option value="package">Choose Packaging</option>
                             </select>
                         </div>
                         <div class="col s2">
-                            <select id="ddl4">
+                            <select id="ddl4" class="browser-default">
                                 <option value="dimention">Dimention</option>
                             </select>
                         </div>
                         <div class="col s2">
-                            <select id="ddl5">
+                            <select id="ddl5" class="browser-default">
                                 <option value="dimention">Weight</option>
                             </select>
                         </div>
                         <div class="col s2">
-                            <select id="ddl6">
+                            <select id="ddl6" class="browser-default">
                             </select>
                         </div>
                     </div>
@@ -141,9 +141,9 @@
         <footer class="page-footer">
             <div class="container">
                 <ul>
-                    <li><a href="about.php">ABOUT US</a></li>
-                    <li><a href="contactus.php">CONTACT US</a></li>
-                    <li><a href="careers.php">CAREERS</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                    <li><a href="careers.html">CAREERS</a></li>
                     <li><a href="#!">PRIVACY POLICY</a></li>
                     <li><a href="#!">TERMS & CONDITIONS</a></li>
                 </ul>

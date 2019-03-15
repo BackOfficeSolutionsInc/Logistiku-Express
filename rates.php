@@ -17,7 +17,7 @@
 </head>
 
 <body>
-
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <nav class="nav-wrapper">
         <div class="container">
             <a href="#" class="brand-logo"><img src="./images/logo.png"></a>
@@ -93,16 +93,16 @@
                 <div class="col s12">
                     <div class="row">
                         <div class="col s2">
-                            <select class="browser-default" id="ddl" onchange="configureDropDownLists(this,document.getElementById('ddl2'))">
-                                <option value="origin">Select Origin</option>
-                                <option value="origin">Manila</option>
-                                <option value="origin">Imus Cavite</option>
-                                <option value="origin">Sta. Rosa Laguna</option>
-                                <option value="origin">Pampanga</option>
-                                <option value="origin">Naga City, Bicol Region</option>
-                                <option value="origin">Cebu</option>
-                                <option value="origin">Davao</option>
-                                <option value="origin">Cagayan De Oro</option>
+                            <select class="browser-default" id="origin" onchange="configureDropDownLists()">
+                                <option >Select Origin</option>
+                                <option >Manila</option>
+                                <option >Imus Cavite</option>
+                                <option >Sta. Rosa Laguna</option>
+                                <option >Pampanga</option>
+                                <option >Naga City, Bicol Region</option>
+                                <option >Cebu</option>
+                                <option >Davao</option>
+                                <option >Cagayan De Oro</option>
                             </select>
 
 
@@ -110,28 +110,29 @@
 
 
                         </div>
-                        <div class="col s2">
-                            <select id="ddl2" class="browser-default">
-                                <option value="origin">Select Destination</option>
+                        <div class="col s2" >
+                            <select id="destination" class="browser-default" onchange="destinationDropDownLists()">
+                                <option >Select Destination</option>
                             </select>
                         </div>
                         <div class="col s2" class="browser-default">
-                            <select id="ddl3" class="browser-default">
-                                <option value="package">Choose Packaging</option>
+                            <select id="packages" class="browser-default" onchange="packagesDropDownLists()">
+                                <option>Choose Packaging</option>
                             </select>
                         </div>
                         <div class="col s2">
-                            <select id="ddl4" class="browser-default">
+                            <select id="dimension" class="browser-default">
                                 <option value="dimention">Dimention</option>
                             </select>
                         </div>
                         <div class="col s2">
-                            <select id="ddl5" class="browser-default">
-                                <option value="dimention">Weight</option>
+                            <select id="weight" class="browser-default">
+                                <option >Weight</option>
                             </select>
                         </div>
                         <div class="col s2">
-                            <select id="ddl6" class="browser-default">
+                            <select id="price" class="browser-default">
+								<option value="dimention">Price</option>
                             </select>
                         </div>
                     </div>
@@ -179,36 +180,210 @@
     </script>
 </body>
 <script>
-    function configureDropDownLists(ddl1, ddl2, ddl3) {
-        var origin = ['Select Destination', 'Manila', 'Imus Cavite', 'Sta. Rosa Laguna', 'Pampanga', 'Naga City, Bicol Region', 'Cebu', 'Davao', 'Cagayan De Oro'];
-        var package = ['Pouch - S', 'Pouch - M', 'Pouch - L', 'Box - S', 'Box - M', 'Box - L'];
-        var names = ['John', 'David', 'Sarah'];
-
-        switch (ddl1.value) {
-            case 'origin':
-                ddl2.options.length = 0;
-                for (i = 0; i < origin.length; i++) {
-                    createOption(ddl2, origin[i], origin[i]);
-                }
+	var origin;
+	var destination;
+    function configureDropDownLists() {
+        var places = ['Select Destination','Manila', 'Imus Cavite', 'Sta. Rosa Laguna', 'Pampanga', 'Naga City, Bicol Region', 'Cebu', 'Davao', 'Cagayan De Oro'];
+        
+       
+		
+		origin=$("#origin").find(":selected").text();
+		$("#destination").empty();
+		
+		var str="";
+		for(var i=0;i<places.length;i++){
+				str += "<option>"+ places[i] + "</option>";
+		}
+		$("#destination").append(str);
+    }
+	function packagesDropDownLists(){
+		$("#dimension").empty();
+		$("#weight").empty();
+		$("#price").empty();
+		 switch ($("#packages").find(":selected").text()) {
+            case 'Pouch - S':
+				$("#dimension").append("<option>15.26 x 27.94</option>");
+                $("#weight").append("<option><1kg</option>");
+				switch (origin) {
+					case 'Manila':
+						switch (destination) {
+							case 'Manila':
+								$("#price").append("<option>60</option>");
+								break;
+							case 'Imus Cavite':
+								$("#price").append("<option>115</option>");
+								break;
+							case 'Sta. Rosa Laguna':
+								$("#price").append("<option>115</option>");
+								break;
+							case 'Naga City, Bicol Region':
+								$("#price").append("<option>115</option>");
+								break;
+							case 'Cebu':
+								$("#price").append("<option>120</option>");
+								break;
+							case 'Davao':
+								$("#price").append("<option>130</option>");
+								break;
+							case 'Cagayan De Oro':
+								$("#price").append("<option>125</option>");
+								break;
+						}
+						break;
+				}
                 break;
-            case 'package':
-                ddl3.options.length = 0;
-                for (i = 0; i < package.length; i++) {
-                    createOption(ddl3, package[i], package[i]);
-                }
+            case 'Pouch - M':
+                $("#dimension").append("<option>25.4 x 33.02</option>");
+				$("#weight").append("<option><2kg</option>");
+				switch (origin) {
+					case 'Manila':
+						switch (destination) {
+							case 'Manila':
+								$("#price").append("<option>75</option>");
+								break;
+							case 'Imus Cavite':
+								$("#price").append("<option>145</option>");
+								break;
+							case 'Sta. Rosa Laguna':
+								$("#price").append("<option>145</option>");
+								break;
+							case 'Naga City, Bicol Region':
+								$("#price").append("<option>145</option>");
+								break;
+							case 'Cebu':
+								$("#price").append("<option>170</option>");
+								break;
+							case 'Davao':
+								$("#price").append("<option>190</option>");
+								break;
+							case 'Cagayan De Oro':
+								$("#price").append("<option>180</option>");
+								break;
+						}
+						break;
+				}
                 break;
-            case 'Names':
-                ddl2.options.length = 0;
-                for (i = 0; i < names.length; i++) {
-                    createOption(ddl2, names[i], names[i]);
-                }
+            case 'Pouch - L':
+                $("#dimension").append("<option>30.48 x 43.18</option>");
+				$("#weight").append("<option><3kg</option>");
+				switch (origin) {
+					case 'Manila':
+						switch (destination) {
+							case 'Manila':
+								$("#price").append("<option>80</option>");
+								break;
+							case 'Imus Cavite':
+								$("#price").append("<option>170</option>");
+								break;
+							case 'Sta. Rosa Laguna':
+								$("#price").append("<option>170</option>");
+								break;
+							case 'Naga City, Bicol Region':
+								$("#price").append("<option>170</option>");
+								break;
+							case 'Cebu':
+								$("#price").append("<option>215</option>");
+								break;
+							case 'Davao':
+								$("#price").append("<option>245</option>");
+								break;
+							case 'Cagayan De Oro':
+								$("#price").append("<option>230</option>");
+								break;
+						
+						}
+						break;
+				}
                 break;
-            default:
-                ddl2.options.length = 0;
+            case 'Box - S':
+                $("#dimension").append("<option>20 x 20 x 35</option>");
+				$("#weight").append("<option><5kg</option>");
+				switch (origin) {
+					case 'Manila':
+						switch (destination) {
+							case 'Manila':
+								$("#price").append("<option>120</option>");
+								break;
+							case 'Imus Cavite':
+								$("#price").append("<option>380</option>");
+								break;
+							case 'Sta. Rosa Laguna':
+								$("#price").append("<option>380</option>");
+								break;
+							case 'Naga City, Bicol Region':
+								$("#price").append("<option>380</option>");
+								break;
+							case 'Cebu':
+								$("#price").append("<option>360</option>");
+								break;
+							case 'Davao':
+								$("#price").append("<option>410</option>");
+								break;
+							case 'Cagayan De Oro':
+								$("#price").append("<option>390</option>");
+								break;
+						}
+						break;
+				}
+                break;
+			case 'Box - M':
+                $("#dimension").append("<option>30 x 30 x 30</option>");
+				$("#weight").append("<option><10kg</option>");
+				switch (origin) {
+					case 'Manila':
+						switch (destination) {
+							case 'Manila':
+							$("#price").append("<option>185</option>");
+							break;
+						}
+						break;
+				}
+                break;
+			case 'Box - L':
+                $("#dimension").append("<option>40 x 40 x 40</option>");
+				$("#weight").append("<option><20kg</option>");
+				switch (origin) {
+					case 'Manila':
+						switch (destination) {
+							case 'Manila':
+								$("#price").append("<option>330</option>");
+								break;
+							case 'Imus Cavite':
+								$("#price").append("<option>1400</option>");
+								break;
+							case 'Sta. Rosa Laguna':
+								$("#price").append("<option>1400</option>");
+								break;
+							case 'Naga City, Bicol Region':
+								$("#price").append("<option>1400</option>");
+								break;
+							case 'Cebu':
+								$("#price").append("<option>1300</option>");
+								break;
+							case 'Davao':
+								$("#price").append("<option>1500</option>");
+								break;
+							case 'Cagayan De Oro':
+								$("#price").append("<option>1415</option>");
+								break;
+						}
+						break;
+				}
                 break;
         }
-
-    }
+	}
+	function destinationDropDownLists(){
+		var package = ['Choose Packaging','Pouch - S', 'Pouch - M', 'Pouch - L', 'Box - S', 'Box - M', 'Box - L'];
+		
+		destination=$("#destination").find(":selected").text();
+		$("#packages").empty();
+		
+		var str="";
+		for(var i=0;i<package.length;i++){
+				str += "<option>"+ package[i] + "</option>";
+		}
+		$("#packages").append(str);
+	}
 
     function createOption(ddl, text, value) {
         var opt = document.createElement('option');

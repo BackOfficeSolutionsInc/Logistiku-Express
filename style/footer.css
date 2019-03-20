@@ -1,0 +1,60 @@
+   /*------> Footer <------*/
+
+body { display: flex; min-height: 100vh; flex-direction: column; }
+.container {
+  margin: 0 auto !important;
+  max-width: 1280px !important;
+  width: 85% !important;
+}
+main { flex: 1 0 auto; }
+.rox { margin-bottom: 0px !important; }
+.page-footer { background-color: rgba(207, 207, 207, 0.9) !important; font-size: 12px; font-family: 'Montserrat', sans-serif; font-weight: 700; 
+  height: auto !important; }
+.s7 a { float: left; color: #06717e; text-align: center; padding: 14px; margin-top: -10px; }
+.apps p { font-family: 'Source Sans Pro', sans-serif; font-size: 13px !important; font-weight: 600 !important; color: #06717e;
+ text-align: left; padding-top: 0px; margin-bottom: 10px; }
+#google img { width: 130px; height: auto; float: left; margin-top: -20px; margin-left: 0px; }
+#apple img { width: 130px; height: auto; float: left; margin-top: -20px; margin-left: 10px; }
+
+ /*------> Right Footer <------*/
+ .s5 { margin:0 auto; width:100%; text-align:center; }
+.book-btn { font-family: 'Source Sans Pro'; font-weight: 700; font-size: 2rem !important; 
+   background-color: #f07025 !important; border-radius: 5px !important; width: 310px; text-align: center; color: white; }
+ 
+ /*------> SocMed<------*/
+ 
+ .socmed { color: #06717e; margin-top: 20px; text-align:center; }
+ #fb img { width: 43px; height: auto;  margin:0 auto; }
+ #pinterest img { width: 43px; height: auto; margin-left: 10px; }
+
+ @media only screen and (max-width:500px) {
+
+/*------> Footer <------*/
+
+body { display: flex; min-height: 100vh; flex-direction: column; }
+
+main { flex: 1 0 auto; }
+.book-btn{ margin-top: 20px !important;}
+.page-footer, .container { padding-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 10px; }
+.page-footer { background-color: rgba(207, 207, 207, 0.9) !important; font-size: 12px; font-family: 'Montserrat', sans-serif; font-weight: 700; 
+ margin-top: 260px; height: auto !important; }
+.page-footer a { display: none; }
+.apps { display: block; margin-left: auto; margin-right: auto; }
+.apps p { font-family: 'Source Sans Pro', sans-serif; font-size: 13px !important; font-weight: 600 !important; color: #06717e;
+ text-align: left; padding-top: 0px; margin-bottom: 10px; margin-right: 0px; display: block; position: relative; width: 200px; }
+#apple img { width: 130px; height: auto; margin-top: -38px; margin-left: 140px; }
+
+
+  /*------> Right Footer <------*/
+
+.right-footer { display: none; }
+.book-btn { display: none; }
+.right-footer a { display: none; }
+
+/*------> SocMed<------*/
+
+.socmed { display: none; }
+#fb img { display: none; }
+#pinterest img { display: none; }
+
+  }

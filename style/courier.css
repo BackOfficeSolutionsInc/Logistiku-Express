@@ -1,0 +1,8 @@
+ /*------> Container <------*/
+
+  .riders { width: 400px; height: auto; }
+ .s6 img { margin-top: 230px; }
+  .s6 h1 { font-family: 'Source Sans Pro', sans-serif; font-size: 40px; font-weight: 800; color: #f07025; margin-top: 0px; text-align: center; margin-top: 50px; }
+  p { font-family: 'Source Sans Pro', sans-serif; font-size: 18px; text-align: center; }
+  .btn, .btn-large, .btn-small { text-decoration: none; color: #fff !important; background-color: #06717e !important; text-align: center; letter-spacing: .5px; 
+    font-size: 30pt !important; font-weight: 700; border-radius: 5px !important; display: block !important; }

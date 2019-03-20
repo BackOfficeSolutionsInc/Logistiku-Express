@@ -1,0 +1,11 @@
+/*------> Container <------*/
+.sg img { margin-top: 20px; }
+.s3 { height: 160px; margin-top: -20px; }
+  h1 { font-family: 'Montserrat', sans-serif; font-weight: 900;  font-size: 55px; color: #f07025; }
+  h2 { font-family: 'Montserrat', sans-serif; font-size: 15px !important; font-weight: 700; color: #f07025; margin-bottom: -5px; }
+  p { font-family: 'Montserrat', sans-serif; margin-top: -10px !important;  font-size: 13px; color: #06717e; }
+  hr { border-top: 2.2px dotted #f07025; }
+  .s2 { width: 150px !important; }
+  #icon { margin-right: 10px; font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 12.5px; color: #06717e; margin-left: 5px; }
+  #icon i {  padding-bottom: 5px; }
+  #icon img { width: 30px; display:block; margin:auto; }

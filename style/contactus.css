@@ -1,0 +1,13 @@
+/*------> Container <------*/
+
+  h1 { font-family: 'Source Sans Pro'; font-size: 55px; font-weight: 600; color: #06717e; }
+  .address {  font-family: 'Montserrat', sans-serif; font-size: 15px; color: #06717e; }
+  .number { font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 800; color: #06717e; }
+  hr { border-top: 2.2px dotted #f07025; }
+  .s6 { margin: 20px 0px; }
+  label { color: #f07025 !important; font-size: 16px !important; }
+  .field { width: 350px; height: 30px; font-size: 15px; border: 1px solid #06717e; border-radius: 5px; outline: none; padding: 10px; }
+  textarea { border: 1px solid #06717e; border-radius: 5px; width: 350px !important; height: auto !important; padding: 10px; outline: none; }
+  .button2 { border-radius: 5px; border: none; color: white; padding: 15px 10px; text-align: center; text-decoration: none; }
+  .btn { background-color: #06717e !important; }
+  fieldset { border: 0; }

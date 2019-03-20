@@ -1,0 +1,7 @@
+/*------> Container <------*/
+
+  .about { width: auto; height: auto; display: block;  margin-left: auto; margin-right: auto; margin-top: 50px; padding-bottom: 0px; }
+  h1 { font-family: 'Source Sans Pro', sans-serif; font-size: 58px; color: #f07025; margin-top: 50px; }
+  .aboutext { border-top: dotted 2px #f07025; }
+  #p p { font-family: 'Source Sans Pro', sans-serif; font-size: 15px !important; font-weight: 600 !important; color: #06717e;
+    text-align: justify; margin-left: 10px !important; margin-bottom: 10px;}

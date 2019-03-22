@@ -1,13 +1,30 @@
 /*------> Container <------*/
 
-  h1 { font-family: 'Source Sans Pro'; font-size: 55px; font-weight: 600; color: #06717e; }
+  h1 { font-family: 'Source Sans Pro' !important; font-size: 55px; font-weight: 600; color: #06717e; }
   .address {  font-family: 'Montserrat', sans-serif; font-size: 15px; color: #06717e; }
   .number { font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 800; color: #06717e; }
   hr { border-top: 2.2px dotted #f07025; }
   .s6 { margin: 20px 0px; }
   label { color: #f07025 !important; font-size: 16px !important; }
-  .field { width: 350px; height: 30px; font-size: 15px; border: 1px solid #06717e; border-radius: 5px; outline: none; padding: 10px; }
-  textarea { border: 1px solid #06717e; border-radius: 5px; width: 350px !important; height: auto !important; padding: 10px; outline: none; }
-  .button2 { border-radius: 5px; border: none; color: white; padding: 15px 10px; text-align: center; text-decoration: none; }
-  .btn { background-color: #06717e !important; }
-  fieldset { border: 0; }
+
+  .label {margin: 2px 0;}
+	.field {margin: 0 0 20px 0;}	
+		.content {width: 960px;margin: 0 auto;}
+		h1, h2 {font-family:"Georgia", Times, serif;font-weight: normal;}
+		div#central {margin: 40px 0px 100px 0px;}
+		@media all and (min-width: 768px) and (max-width: 979px) {.content {width: 750px;}}
+		@media all and (max-width: 767px) {
+			body {margin: 0 auto;word-wrap:break-word}
+			.content {width:auto;}
+			div#central {	margin: 40px 20px 100px 20px;}
+		}
+		body {font-family: 'Helvetica',Arial,sans-serif;background:#ffffff;margin: 0 auto;-webkit-font-smoothing: antialiased;  font-size: initial;line-height: 1.7em;}	
+		input, textarea {width:100%;padding: 15px;font-size:1em;border: 1px solid #A1A1A1;	}
+		button { padding: 12px 60px; background: #06717e; border: none; color: #ffffff;	font-size:1em; font-family: "Georgia", Times, serif; cursor: pointer; border-radius: 5px; }
+		#message {  padding: 0px 40px 0px 0px; }
+		#mail-status { padding: 12px 20px; width: 100%; display:none; font-size: 1em; font-family: "Georgia", Times, serif; color: #ffffff; }
+  .error { background-color: #F7902D;  margin-bottom: 40px; }
+  .success { background-color: #06717e; }
+  .g-recaptcha { margin: 0 0 25px 0; }
+  textarea { height: 100px !important; }
+  

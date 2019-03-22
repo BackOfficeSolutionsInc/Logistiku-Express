@@ -41,7 +41,7 @@
                             <div class="row">
                                 <h3>TRACK YOUR PARCEL</h3>
                                 <div class="search">
-                                    <form  action="https://track.logistikus-express.com/index.php" onsubmit="myFunction()">
+                                    <form action="https://track.logistikus-express.com/index.php" onsubmit="myFunction()">
                                         <input type="text1" class="track" placeholder="TRACKING #" name="search" autocomplete="off" />
                                         <input type="submit" class="button1" placeholder="TRACKING #" name="urlDirect"
                                             value="Track">
